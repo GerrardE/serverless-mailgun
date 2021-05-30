@@ -1,0 +1,37 @@
+{
+  "name": "serverless-mailgun",
+  "version": "1.0.0",
+  "description": "Serverless application for handling mailgun events",
+  "main": "handler.js",
+  "scripts": {
+    "dev": "serverless offline start",
+    "build": "rm -rf .serverless && serverless package",
+    "deploy": "serverless deploy",
+    "test": "npx mocha \"tests/**/**/*.ts\" --require ts-node/register",
+    "coverage": "nyc mocha \"tests/**/**/*.ts\" --require ts-node/register"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@serverless/typescript": "^2.23.0",
+    "@types/aws-lambda": "^8.10.71",
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.25",
+    "aws-sdk": "^2.908.0",
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "serverless": "^2.41.2",
+    "serverless-bundle": "^4.3.1",
+    "serverless-dotenv-plugin": "^3.9.0",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-offline": "^7.0.0"
+  },
+  "author": "Gerrard Ezeugwa",
+  "license": "MIT"
+}
