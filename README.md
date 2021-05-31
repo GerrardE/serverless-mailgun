@@ -32,7 +32,7 @@ Provision the necessary services needed for running the application:
     - `MAILGUN_API_KEY=` for verifying mailgun requests
     - `NOTIFICATION_EMAIL=` email you want to receive notifications on
 
-1. Start the serverless-mailgun app in dev mode with `npm run dev`.
+1. Start the serverless-mailgun app in dev mode with `yarn dev`.
 1. To deploy, make sure `STAGE=prod` in the .env file and run `yarn deploy` in the root folder of the application.
 
 ## Tests
